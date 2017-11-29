@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=-1
+HISTFILESIZE=-1
 #HISTFILE="${HOME}/.history/$(date -u +%Y/%m/%d.%H.%M.%S)_${HOSTNAME_SHORT}_$$"
 
 # check the window size after each command and, if necessary,
@@ -89,8 +89,10 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias kak='$(thefuck $(fc -ln -1))'
-alias pass='hsxkpasswd -p xkcd'
+alias kak='eval $(thefuck $(fc -ln -1))'
+alias pass='hsxkpasswd -p APPLEID'
+alias token='echo 1234`stoken`'
+#alias cleanup="git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -D"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
