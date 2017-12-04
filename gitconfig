@@ -1,7 +1,7 @@
 [user]
-	email = henry.snoek@werkspot.nl
-	name = Henry Snoek
-	signingkey = C13E9A5A50BE6934
+	email = me@domain.com
+	name = Name Here
+	signingkey = SOMEKEYHERE
 [push]
 	default = simple
 [alias]
