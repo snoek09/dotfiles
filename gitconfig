@@ -8,7 +8,6 @@
 	praise = blame
 	ch = checkout
         pf = push --force-with-lease
-	quick-stats = ! /usr/local/bin/git-quick-stats
 [core]
 	excludesfile = ~/.global_gitignore
 	autocrlf = input
