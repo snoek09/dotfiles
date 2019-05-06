@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=66.4
+Type=Application
+Terminal=false
+Exec=/opt/firefox/firefox
+Name=firefox
+Comment=firefox
+Icon=/usr/share/icons/hicolor/128x128/apps/firefox.png
