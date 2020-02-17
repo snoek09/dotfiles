@@ -92,7 +92,8 @@ alias l='ls -CF'
 alias kak='eval $(thefuck $(fc -ln -1))'
 alias pass='hsxkpasswd -p APPLEID'
 alias token='echo 1234`stoken`'
-#alias cleanup="git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -D"
+alias cleanup='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
+alias osvg='svgo --enable=inlineStyles  --config `{ "plugins": [ { "inlineStyles": { "onlyMatchedOnce": false } }] }` -f . --pretty'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
