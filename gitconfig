@@ -17,7 +17,6 @@
 	program = gpg2
 [submodule]
 	recurse = true
-
 #[diff "ansible-vault"]
 #	textconv = ansible-vault view
 #        cachetextconv = true
