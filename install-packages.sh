@@ -2,7 +2,7 @@
 
 # apt packages
 sudo apt update
-sudo apt install python3-dev python3-pip git make wget vim xwrits
+sudo apt install python3-dev python3-pip git make wget vim xwrits gnupg2
 
 # python packages
 sudo pip3 install thefuck
